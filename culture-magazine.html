@@ -12,6 +12,8 @@
 <link href="css/fonts.css" rel="stylesheet">
 <link href="vendor/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css?v=20261116-final" rel="stylesheet">
+<link href="css/culture-magazine.css?v=20261117" rel="stylesheet">
+<link href="css/no-motion.css?v=20261117" rel="stylesheet">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -19,7 +21,7 @@
 <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Main">
   <div class="container">
     <a class="brand brand-logo" href="index.html" aria-label="Rory Jenkins Visual Graphic Designer, home">
-      <img src="img/logo-image.png" width="570" height="177" alt="Rory Jenkins Visual Graphic Designer">
+      <img src="img/logo-rory-jenkins.png" width="570" height="177" alt="Rory Jenkins Visual Graphic Designer">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
       <span class="navbar-toggler-icon"></span>
@@ -45,74 +47,44 @@
 </header>
 <main id="main" class="culture-page">
 
-<section class="page-head">
-  <div class="container"><span class="kicker">Editorial and publication design</span><h1>CULTURE Magazine</h1></div>
+<section class="page-head culture-heading" aria-labelledby="culture-title">
+  <div class="container"><h1 id="culture-title">CULTURE Magazine</h1></div>
 </section>
-<section class="pb-4"><div class="container"><div class="culture-cover"><figure class="gallery-item ">
-  <button type="button" class="frame" data-lightbox="img/culture-cover-mockup.jpg" data-alt="CULTURE magazine cover beside the contents page" data-caption="CULTURE Magazine, cover and contents" aria-label="Enlarge: CULTURE Magazine, cover and contents">
-    <img src="img/culture-cover-mockup.jpg" width="1536" height="1024" alt="CULTURE magazine cover beside the contents page" loading="lazy">
-  </button>
-  <figcaption>CULTURE Magazine, cover and contents</figcaption>
-</figure></div></div></section>
-
-
-
-
-
-<section class="section pb-4">
+<section class="culture-opening" aria-label="Magazine cover and contents">
   <div class="container">
-
-    <div class="project-description mb-4">
-      <p>This two-page magazine spread represents the fusion of traditional fine art and contemporary digital design, bringing together hand-painted portraiture with the precision of modern editorial layout.</p>
-    </div>
-
-    <div class="culture-cover">
-      <figure class="gallery-item">
-        <button
-          type="button"
-          class="frame"
-          data-lightbox="img/culture-portrait_one.jpg"
-          data-alt="CULTURE magazine editorial portrait spread"
-          data-caption="CULTURE Magazine, editorial portrait spread"
-          aria-label="Enlarge: CULTURE Magazine, editorial portrait spread">
-
-          <img
-            src="img/culture-portrait_one.jpg"
-            width="1536"
-            height="1024"
-            alt="CULTURE magazine editorial portrait spread"
-            loading="lazy">
-        </button>
-
-        <figcaption>CULTURE Magazine, editorial portrait spread</figcaption>
-      </figure>
-    </div>
-
+    <figure class="gallery-item culture-cover">
+      <button type="button" class="frame" data-lightbox="img/culture-cover-mockup.jpg" data-alt="CULTURE magazine cover beside the contents page" data-caption="CULTURE Magazine, cover and contents" aria-label="Enlarge: CULTURE Magazine, cover and contents">
+        <img src="img/culture-cover-mockup.jpg" width="1536" height="1024" alt="CULTURE magazine cover beside the contents page" fetchpriority="high">
+      </button>
+    </figure>
   </div>
 </section>
-
-
-
-
-
-<section class="section"><div class="container"><div class="project-description">
-  <h2>The Power of Portraiture: Where Fine Art Meets Digital Design</h2>
-  <p>My goal has always been to make my paintings more than beautiful images. I want my art to serve a purpose—promoting products, telling stories, and connecting with consumers through genuine emotion.</p>
-<p>Created for CULTURE Magazine, this two-page spread combines my original hand-painted portraits with digital design. Rather than relying on traditional stock photography, I transformed my paintings into dynamic visual compositions.</p>
-<p>This project celebrates art, heritage, and self-expression. It demonstrates how fine art and digital technology can work together to create powerful, memorable advertising.</p>
-<p>Technology can generate images, but my artistic vision brings personal expression, emotion, and purpose to every design.</p>
-</div></div></section>
-<section class="section section-tint"><div class="container">
-  <div class="project-description"><h2>From Pencil to Paint: The Evolution of an Artistic Vision</h2><p>My creative process begins with a pencil and a brush. This project features my very first oil painting, inspired by my passion for drawing unique figures, shapes, and expressive forms.</p>
-<p>What began as an original pencil sketch evolved into an oil painting, a digital illustration, and an exhibition flyer, with the vision of becoming a magazine cover. Each stage demonstrates how I transform traditional fine art into contemporary graphic design.</p>
-<p>My creative identity is built on originality. Rather than starting with stock images, I create my own artwork and develop it across different media. From pencil to paint to digital design, every piece tells a story of artistic exploration, imagination, and transformation.</p></div>
-  <div class="culture-process"><figure class="gallery-item ">
-  <button type="button" class="frame" data-lightbox="img/portrait-process.jpg" data-alt="The Whimsical Man developed into an exhibition flyer, pencil drawing, digital illustration and original oil painting" data-caption="From pencil to paint to digital design" aria-label="Enlarge: From pencil to paint to digital design">
-    <img src="img/portrait-process.jpg" width="1440" height="612" alt="The Whimsical Man developed into an exhibition flyer, pencil drawing, digital illustration and original oil painting" loading="lazy">
-  </button>
-  <figcaption>From pencil to paint to digital design</figcaption>
-</figure></div>
-</div></section>
+<section class="culture-evolution" aria-labelledby="evolution-title">
+  <div class="culture-process-panel">
+    <figure class="gallery-item culture-process">
+      <button type="button" class="frame" data-lightbox="img/portrait-process.jpg" data-alt="The Whimsical Man as an exhibition flyer, original pencil drawing, digital illustration and original oil painting" data-caption="From pencil to paint to digital design" aria-label="Enlarge: From pencil to paint to digital design">
+        <img src="img/portrait-process.jpg" width="1440" height="612" alt="Four stages of the artwork: exhibition flyer, original drawing of the Whimsical Man, digital illustration and original oil painting" loading="lazy">
+      </button>
+    </figure>
+    <h2 id="evolution-title">From Pencil to Paint: An Artistic Evolution</h2>
+  </div>
+  <div class="culture-story">
+    <p class="culture-introduction">My creative process begins with original artwork, not stock imagery. This project evolved from a pencil sketch into an oil painting, digital illustration, and exhibition flyer, with a vision for a magazine cover. Each stage reflects my ability to transform traditional fine art into contemporary graphic design while maintaining originality and artistic expression.</p>
+    <div class="culture-artwork-pair">
+      <figure class="gallery-item culture-original">
+        <button type="button" class="frame" data-lightbox="img/culture-portrait-blue-collar.png" data-alt="Original painted portrait of a man in a black beret and blue draped collar" data-caption="Original portrait artwork" aria-label="Enlarge: Original portrait artwork">
+          <img src="img/culture-portrait-blue-collar.png" width="1065" height="1477" alt="Original painted portrait of a man in a black beret and blue draped collar" loading="lazy">
+        </button>
+      </figure>
+      <figure class="gallery-item culture-editorial">
+        <button type="button" class="frame" data-lightbox="img/culture-mockup.jpg" data-alt="CULTURE magazine cover, contents and Power of Portraiture spread arranged on a wooden surface" data-caption="CULTURE Magazine editorial design" aria-label="Enlarge: CULTURE Magazine editorial design">
+          <img src="img/culture-mockup.jpg" width="867" height="982" alt="CULTURE magazine cover, contents and two-page portrait feature on a wooden surface" loading="lazy">
+        </button>
+      </figure>
+    </div>
+    <p class="culture-conclusion">This two-page magazine spread represents the fusion of traditional fine art and contemporary digital design, bringing together hand-painted portraiture with the precision of modern editorial layout.</p>
+  </div>
+</section>
 <section>
   <div class="container"><a class="next-project" href="calendar-design.html"><span>Next category</span><strong>2027 HBCU Calendar</strong></a></div>
 </section>
@@ -130,7 +102,7 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-5">
-        <a class="footer-logo" href="index.html" aria-label="Rory Jenkins, home"><img src="img/logo-image.png" width="570" height="177" alt="Rory Jenkins Visual Graphic Designer"></a>
+        <a class="footer-logo" href="index.html" aria-label="Rory Jenkins, home"><img src="img/logo-rory-jenkins.png" width="570" height="177" alt="Rory Jenkins Visual Graphic Designer"></a>
         <p class="mt-3 mb-0" style="max-width:24rem">Visual designer, artist and creative storyteller. Graphic design, publications, portraits and fine art.</p>
       </div>
       <div class="col-6 col-lg-3">
@@ -164,6 +136,6 @@
   </div>
 </div>
 <script src="vendor/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20261117-static"></script>
 </body>
 </html>

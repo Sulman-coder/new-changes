@@ -1,0 +1,85 @@
+/* Calendar achievement section. */
+.calendar-achievement {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+.calendar-achievement-card {
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 4.5vw, 4rem);
+  border: 1px solid #e7e0f0;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(42, 31, 112, .05);
+}
+.calendar-achievement-label {
+  margin-bottom: 1rem;
+  color: var(--violet);
+  font-family: var(--font-ui);
+  font-size: .8125rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.calendar-achievement-heading h2 {
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+.calendar-achievement-intro,
+.calendar-achievement-copy {
+  max-width: 760px;
+  margin-inline: auto;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.85;
+}
+.calendar-achievement-intro { margin-bottom: 0; }
+.calendar-results {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 0;
+  margin: 2.25rem 0;
+  padding: 1.75rem .5rem;
+  border-block: 1px solid #e9e3f1;
+  background: #fbf9fe;
+}
+.calendar-results > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  padding-inline: .75rem;
+}
+.calendar-results > div + div { border-left: 1px solid #e4dced; }
+.calendar-results dt {
+  color: var(--muted);
+  font-size: .875rem;
+  font-weight: 500;
+}
+.calendar-results dd {
+  order: -1;
+  margin: 0;
+  color: var(--violet);
+  font-family: var(--font-ui);
+  font-size: clamp(1.625rem, 3.3vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.04em;
+  font-variant-numeric: tabular-nums;
+}
+.calendar-achievement-copy p { margin-bottom: 1.25rem; }
+.calendar-achievement-copy .calendar-achievement-closing {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+@media (max-width: 575.98px) {
+  .calendar-achievement-card { border-radius: 16px; }
+  .calendar-results { grid-template-columns: 1fr; margin-block: 1.75rem; padding: .5rem 1rem; }
+  .calendar-results > div { padding: 1rem 0; }
+  .calendar-results > div + div { border-left: 0; border-top: 1px solid #e4dced; }
+}

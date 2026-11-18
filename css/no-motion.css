@@ -1,0 +1,45 @@
+/* Site-wide static presentation, requested by the client.
+   Load last so page styles and Bootstrap also use immediate state changes. */
+html {
+  scroll-behavior: auto !important;
+}
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+/* Content must remain visible without entrance animations or observers. */
+.hero .reveal,
+.hero .hero-art,
+.js [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Keep hover and focus feedback stationary. */
+:is(.btn, .brand-logo img, .hero-art img, .hero-art::before,
+    .cat-card, .cat-card img, .feature-media, .feature-media img,
+    .feature-num, .card-work .thumb, .card-work .thumb img,
+    .gallery-item .frame, .gallery-item .frame img, .doc-frame,
+    .about-photo, .form-control, .form-select) {
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: none !important;
+  will-change: auto;
+}
+
+/* Remove decorative sweeps and sliding overlays. */
+.cat-card::before,
+.feature-media::before,
+.feature-media::after,
+.scroll-progress {
+  display: none !important;
+}
+.text-link:hover { letter-spacing: 0; }
+.next-project:hover strong { letter-spacing: -.02em; }
+.site-nav .dropdown-item:hover { padding-left: .9rem; }
+.contact-list li:hover { padding-left: 0; }

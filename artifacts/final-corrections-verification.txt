@@ -1,9 +1,0 @@
-Image files decode and intrinsic dimensions match.
-Pages: 13; local references/anchors: 573; HTTP resources: 105.
-Font families: Montserrat, Playfair Display, Poppins
-PASS: no missing local resources, broken anchors, duplicate IDs or external image dependencies.
-
-PASS: HTML tag nesting, requested artwork placements, supplied asset integrity, replacement copy presence, category labels and duplicate removal.
-PASS: JavaScript syntax checked with node --check js/main.js.
-Browser visual and interaction verification incomplete. Computer Use stopped because it could not determine Chrome current URL with enough confidence.
-Live deployment pending.
