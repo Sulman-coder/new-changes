@@ -23,7 +23,7 @@ class Page(HTMLParser):
             self.ids.append(attrs['id'])
         if tag == 'img' and attrs.get('src'):
             self.images.append(attrs)
-        for key in ('src', 'href', 'data-lightbox'):
+        for key in ('src', 'href', 'data-lightbox', 'poster'):
             if attrs.get(key):
                 self.refs.append(attrs[key])
 

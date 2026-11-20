@@ -3,6 +3,24 @@
 The editable website is in this directory. No build step or paid editor is required.
 Open `index.html` to review it, or serve the folder with `python -m http.server 8080`.
 
+## Osiris Coffee coupon addition - 19 November 2026
+
+Follow-up sizing revision: the existing Golden Stripe Coupon Poster is now centered at a maximum display width of 400 px and scales down on mobile. Its full-size image viewer remains available.
+
+Added the supplied six-coupon image to a new Promotional coupons section on `osiris-coffee.html`, preserving the existing gallery. The original is stored as `img/osiris-promotional-coupons.jpg` and opens at full size through the existing image viewer. Desktop and mobile rendering and image-viewer checks pass; all 14 pages pass source and local HTTP checks (123 resources).
+
+The latest complete delivery, including OMOSSOS and these coupons, is `artifacts/rory-jenkins-with-omossos-and-coupons-20261119.zip`. No live deployment was made.
+
+## OMOSSOS project addition - 19 November 2026
+
+The new `omossos.html` page follows the supplied project layout guide and includes the complete supplied description, red splash logo, Terrell Jackson portrait, website concept, T-shirt branding, logo explorations and promotional video. Artwork opens in the existing image viewer. The original description PDF and MP4 are available through links on the page.
+
+The page is linked from the Projects menu on all 14 pages, from the Home and All Projects cards, and from the Book Cover page's next-project link. The project listing now describes nine categories. Project-specific responsive styling is in `css/omossos.css`; originals are in `img/omossos/`, the video is `video/omossos-promotion.mp4`, and the description is `files/omossos-project-description.pdf`.
+
+The complete updated delivery is `artifacts/rory-jenkins-with-omossos-20261119.zip`. Extract its contents with `index.html` at the hosting root. This delivery preserves the current project's previous corrections. No live deployment or domain changes were made.
+
+Verification: source/image and local HTTP checks pass across all 14 pages. A separate headless Chrome session verified image viewing, both project-card links, the mobile navigation, and MP4 playback (1280 x 720, approximately 24 seconds). Responsive checks passed at 320, 390, 768, 1024 and 1440 px without horizontal overflow. Desktop and mobile screenshots and the verification log are in `artifacts/omossos-review/`.
+
 ## Client requirements and status
 
 | Requirement | Status |
