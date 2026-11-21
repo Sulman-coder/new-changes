@@ -762,4 +762,6 @@ p, .prose, .lead-text, .muted, .card-work p, .cta-band p, .gallery-item figcapti
 @media (max-width: 575.98px) {
   .brand-logo img, .site-nav.is-scrolled .brand-logo img { height: auto; width: min(64vw, 250px); }
   .about-photo { max-width: 290px; }
+  /* Keep large Bootstrap row gutters inside the phone-sized container. */
+  .container > .row.g-5 { --bs-gutter-x: 1.5rem; }
 }

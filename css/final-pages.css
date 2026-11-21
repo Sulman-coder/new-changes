@@ -1,0 +1,56 @@
+/* Client's final sketch sheets and creative process, 20 November 2026. */
+.sketch-sheet { max-width: 1100px; margin-inline: auto; }
+.sketch-sheet figure.gallery-item { max-width: 100%; }
+.sketch-sheet .frame { background: #fff; border: 1px solid var(--line); }
+.sketch-sheet .frame img { width: 100%; height: auto; }
+.sketch-sheet figcaption { max-width: 52rem; margin-inline: auto; }
+.sheet-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .75rem; margin-block: 2rem; }
+.sheet-pagination a { padding: .55rem 1.15rem; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-size: 1rem; font-weight: 600; }
+.sheet-pagination a[aria-current="page"] { color: #fff; background: var(--violet); border-color: var(--violet); }
+.sketch-projects { max-width: 56rem; margin: 2.5rem auto 0; }
+.sketch-projects h2 { font-size: 1.75rem; }
+.sketch-projects ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem 1.5rem; margin-top: 1.5rem; }
+.studio-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; max-width: 1000px; margin-inline: auto; }
+.studio-link { display: flex; flex-direction: column; align-items: center; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+.studio-link h3 { font-size: 1.6rem; line-height: 1.3; }
+.studio-link p { font-size: 1.125rem; color: var(--muted); }
+.studio-link .btn { margin-top: auto; }
+.studio-link img { width: 100%; max-width: 360px; margin-bottom: 1.5rem; border-radius: 8px; }
+.process-page { padding: clamp(2rem, 5vw, 4.5rem) 0; }
+.process-card { --process-orange: #d95b00; --process-purple: #55318c; --process-gold: #ad7200; border: 1px solid #dedde2; border-radius: 26px; padding: clamp(1.5rem, 4vw, 4rem); background: #fff; }
+.process-card h1 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.2; margin: 0 0 1rem; }
+.process-subtitle { color: #56535b; font-size: clamp(1.125rem, 2vw, 1.4rem); margin-bottom: 0; }
+.process-timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; list-style: none; padding: 0; margin: clamp(2.5rem, 6vw, 4rem) 0; }
+.process-timeline li { position: relative; }
+.process-timeline li:not(:last-child)::after { content: ""; position: absolute; width: calc(100% + 1rem); top: 50%; left: 50%; border-top: 4px dashed #b6abc0; }
+.process-timeline a { display: grid; place-items: center; position: relative; z-index: 1; width: min(100%, 112px); aspect-ratio: 1; margin: auto; border-radius: 50%; background: var(--step-color); color: #fff; font-family: var(--font-ui); font-size: clamp(1.5rem, 4vw, 3rem); font-weight: 700; text-decoration: none; }
+.process-timeline li:nth-child(3n+1), .process-steps li:nth-child(3n+1), .process-values article:nth-child(3n+1) { --step-color: var(--process-orange); }
+.process-timeline li:nth-child(3n+2), .process-steps li:nth-child(3n+2), .process-values article:nth-child(3n+2) { --step-color: var(--process-purple); }
+.process-timeline li:nth-child(3n), .process-steps li:nth-child(3n), .process-values article:nth-child(3n) { --step-color: var(--process-gold); }
+.process-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.25rem 2rem; list-style: none; padding: 0; margin: 0; }
+.process-steps li { scroll-margin-top: 2rem; }
+.process-step-number { display: block; font-family: var(--font-ui); font-size: clamp(2.25rem, 4vw, 3.25rem); line-height: 1.2; font-weight: 700; color: var(--step-color); margin-bottom: 1rem; }
+.process-card h2 { font-size: clamp(1.3rem, 2vw, 1.65rem); line-height: 1.35; margin-bottom: 1rem; }
+.process-card h2, .process-card h3 { font-family: var(--font-body); font-weight: 600; }
+.process-steps p, .process-values p { font-size: 1.0625rem; line-height: 1.65; margin: 0; }
+.process-values { border-top: 1px solid #dedde2; margin-top: 3rem; padding-top: 2.5rem; }
+.process-values > h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 2rem; }
+.process-values-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.process-values svg { display: block; width: 48px; height: 48px; margin: 0 auto 1.25rem; color: var(--step-color); stroke-width: 2; }
+.process-values h3 { font-size: clamp(1.2rem, 1.7vw, 1.5rem); line-height: 1.4; margin-bottom: .75rem; }
+.process-values p { color: #56535b; }
+.process-signature { margin: 2.5rem 0 0; padding-top: 2.5rem; border-top: 1px solid #dedde2; font-size: clamp(1.125rem, 2vw, 1.4rem); font-weight: 600; font-style: italic; }
+.process-followup { margin: 2.5rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+@media (max-width: 767.98px) {
+  .studio-links { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.25rem; }
+  .process-values-grid { grid-template-columns: 1fr; }
+  .process-timeline { gap: .5rem; }
+  .process-timeline li:not(:last-child)::after { width: calc(100% + .5rem); border-width: 2px; }
+  .process-timeline a { font-size: clamp(.875rem, 4vw, 1.5rem); }
+}
+@media (max-width: 479.98px) {
+  .process-card { padding: 1.5rem 1rem; border-radius: 18px; }
+  .process-steps { grid-template-columns: 1fr; gap: 2rem; }
+  .process-steps p { max-width: 25rem; margin-inline: auto; }
+}

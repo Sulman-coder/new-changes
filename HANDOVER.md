@@ -3,6 +3,22 @@
 The editable website is in this directory. No build step or paid editor is required.
 Open `index.html` to review it, or serve the folder with `python -m http.server 8080`.
 
+## Final thumbnail pages, creative process and bottles — 20 November 2026
+
+Added `project-thumbnails.html` and `project-thumbnails-2.html` using the two original client sketch sheets, with page navigation, full-size image viewers and links to the finished projects. The original JPEGs and smaller listing previews are in `img/project-thumbnails/`.
+
+Added `design-process.html` with the supplied six stages, three differentiators and closing statement, implemented as responsive selectable text. The reference screenshot's explanatory paragraph below the design is not website content. Page-specific styles are in `css/final-pages.css`. Both new sections are linked from every page's Projects menu and Explore footer, with additional links from About and All Projects.
+
+The Daybrave product gallery and its image viewer now use the supplied replacement photograph at `img/daybrave-products-final.png`. This is a byte-for-byte copy of `img/new botle change.png`; the new URL avoids the previous image being served from browser caches. The image description now correctly identifies cleanser, moisturizer and the two face wash containers. Existing campaign artwork is preserved.
+
+Also corrected large mobile row gutters and restored keyboard focus to the triggering image button when the image viewer closes. HTML references have updated CSS/JS cache versions.
+
+The complete upload delivery is `artifacts/rory-jenkins-final-pages-20261120.zip`. It includes all 17 HTML pages, artwork, local fonts and licenses, Bootstrap, scripts, styles, video, downloadable documents and this handover. Extract its contents with `index.html` at the hosting root. Future work can be edited directly in this folder; no paid editor or build process is required.
+
+Verification passed: 17 pages, 131 local HTTP resources and 49 responsive browser layouts at widths from 320 to 1440 px; no missing images, horizontal overflow or JavaScript errors. Original-image viewers, Escape dismissal, focus return, sketch pagination, six process anchor links and mobile navigation pass. Screenshots and the browser report are in `artifacts/final-pages-review/`.
+
+Publication remains pending. This checkout has no hosting configuration or credentials, and the connected Sites account contained no existing site. The requested hosting destination has been asked for; no live deployment or domain changes have been made.
+
 ## Osiris Coffee coupon addition - 19 November 2026
 
 Follow-up sizing revision: the existing Golden Stripe Coupon Poster is now centered at a maximum display width of 400 px and scales down on mobile. Its full-size image viewer remains available.
